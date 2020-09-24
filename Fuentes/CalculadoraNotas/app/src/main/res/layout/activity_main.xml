@@ -72,10 +72,35 @@
             android:layout_weight="1" />
 
     </LinearLayout>
-
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/marginTopBase"
+        android:visibility="visible"
+        android:id="@+id/promedioLl"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Promedio"
+            android:textSize="@dimen/LetraBase"
+            android:textAllCaps="true">
+        </TextView>
+        <TextView
+            android:textSize="@dimen/LetraBase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:id="@+id/promedioTxt">
+        </TextView>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:background="@color/colorPrimary"
             android:textColor="@color/primary_light"
@@ -91,6 +116,7 @@
         </TextView>
 
     </LinearLayout>
+
 
     <ListView
         android:id="@+id/notaLv"
